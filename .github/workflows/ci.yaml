@@ -35,5 +35,5 @@ jobs:
           poetry install  # Install dependencies from pyproject.toml
 
       - name: Run tests
-        run: pytest -v -n 1  # Run tests in a single thread with verbose output
+        run: pytest -v
 
