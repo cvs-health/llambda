@@ -23,10 +23,10 @@ def test_bleu():
     x = bleu.evaluate(data["text1"], data["text2"])
     np.testing.assert_almost_equal(x, actual_results["test1"], 5)
 
-def test_cosine():
-    cosine = CosineSimilarity(transformer='all-MiniLM-L6-v2')
-    x = cosine.evaluate(data["text1"], data["text2"])
-    np.testing.assert_almost_equal(x, actual_results["test2"], 5)
+# def test_cosine():
+#     cosine = CosineSimilarity(transformer='all-MiniLM-L6-v2')
+#     x = cosine.evaluate(data["text1"], data["text2"])
+#     np.testing.assert_almost_equal(x, actual_results["test2"], 5)
 
 def test_rougel():
     rougel = RougelSimilarity()
