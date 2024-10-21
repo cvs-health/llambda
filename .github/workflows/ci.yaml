@@ -31,6 +31,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest .
+          pip install -U sentence-transformers
           pip install poetry  # Install Poetry if you're using it
           poetry install  # Install dependencies from pyproject.toml
 
